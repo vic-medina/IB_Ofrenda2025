@@ -1,0 +1,16 @@
+header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    text-align: center;
+    font-family: sans-serif;
+    z-index: 10;
+}
+
+body {
+    margin: 0; 
+    overflow: hidden;
+}

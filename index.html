@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AR Test</title>
+
+    <!-- Librerías -->
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    <script src="https://cdn.rawgit.com/jeromeetienne/ar.js/1.7.2/aframe/build/aframe-ar.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aframe-extras@6.1.1/dist/aframe-extras.min.js"></script>
+
+    <script src="claseBiografia.js"></script>
+    <script src="script.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <header>Instituto de Biología - Ofrenda 2025</header>
+
+    <a-scene embedded arjs="sourceType: webcam; debugUIEnabled: false;">
+
+      <a-assets>
+        <!--Mural-->
+        <a-asset-item id="barco" src="modelos/Ofrenda_barco_V01.glb"></a-asset-item>
+        <img id="capa2" src="img/Mural/2.png" />
+        <img id="capa3" src="img/Mural/3.png" />
+        <img id="capa4" src="img/Mural/4.png" />
+        <img id="capa5" src="img/Mural/5.png" />
+        <img id="capa6" src="img/Mural/6.png" />
+        <img id="capa7" src="img/Mural/7.png" />
+
+        <!--Biografías Jacobo Issac Ochentera-->
+        <img id="jacobo1" src="img/Biografias/JacoboIssacOchentero/1 fondo.png">
+        <img id="jacobo2" src="img/Biografias/JacoboIssacOchentero/2 calavera.png">
+        <img id="jacobo3" src="img/Biografias/JacoboIssacOchentero/3 flores.png">
+        <img id="jacobo4" src="img/Biografias/JacoboIssacOchentero/4 marco.png">
+        <img id="jacobo5" src="img/Biografias/JacoboIssacOchentero/5 personaje.png">
+        <img id="jacobo6" src="img/Biografias/JacoboIssacOchentero/6 textos.png">
+        <img id="jacobo7" src="img/Biografias/JacoboIssacOchentero/7 sempasuchil.png">
+        <img id="jacoboR" src="img/Biografias/JacoboIssacOchentero/Reverso.png">
+
+        <!--Biografías Antonio Ramirez Laguna-->
+        <img id="antonio1" src="img/Biografias/JacoboIssacOchentero/1 fondo.png">
+        <img id="antonio2" src="img/Biografias/JacoboIssacOchentero/2 calavera.png">
+        <img id="antonio3" src="img/Biografias/JacoboIssacOchentero/3 flores.png">
+        <img id="antonio4" src="img/Biografias/JacoboIssacOchentero/4 marco.png">
+        <img id="antonio5" src="img/Biografias/JacoboIssacOchentero/5 personaje.png">
+        <img id="antonio6" src="img/Biografias/JacoboIssacOchentero/6 textos.png">
+        <img id="antonio7" src="img/Biografias/JacoboIssacOchentero/7 sempasuchil.png">
+        <img id="antonioR" src="img/Biografias/JacoboIssacOchentero/Reverso.png">
+      </a-assets>
+
+      <a-marker preset="hiro">
+        <a-entity scale="3 3 3">
+        <a-plane position="0 0 0" scale="1 1 1" rotation="-90 0 0" material="src: #capa7; transparent: true;"></a-plane>
+        <a-plane position="0 .1 0" scale="1 1 1" rotation="-90 0 0" material="src: #capa6; transparent: true;"></a-plane>
+        <a-plane position="0 .2 0" scale="1 1 1" rotation="-90 0 0" material="src: #capa5; transparent: true;"></a-plane>
+        <a-plane position="0 .3 0" scale="1 1 1" rotation="-90 0 0" material="src: #capa4; transparent: true;"></a-plane>
+        <a-plane position="0 .4 0" scale="1 1 1" rotation="-90 0 0" material="src: #capa3; transparent: true;"></a-plane>
+        <a-plane position="0 .5 0" scale="1 1 1" rotation="-90 0 0" material="src: #capa2; transparent: true;"></a-plane>
+        <a-entity gltf-model="#barco" position="0 .6 0" scale="1 1 1" rotation="-90 0 0" animation-mixer></a-entity>
+        </a-entity>
+      </a-marker>
+
+      <a-marker id="jacoboMarker" type="pattern" url="img/Patrones/Patron_IssacOchoterenaMendieta_Celula.patt">
+      </a-marker>
+
+      <a-marker id="antonioMarker" type="pattern" url="img/Patrones/Patron_LuisHerrera_Celulas.patt">
+      </a-marker>
+
+      <a-entity camera>
+        <a-cursor></a-cursor>
+      </a-entity>
+
+    </a-scene>
+  </body>
+</html>
