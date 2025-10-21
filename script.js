@@ -1,43 +1,42 @@
 window.onload = function () {
-  const marcadorCelula = document.querySelector('#jacoboMarker');
-  const marcadorAgave = document.querySelector('#antonioMarker');
+  const marcHelia = document.querySelector('#heliaMarker');
+  const marcIssac = document.querySelector('#issacMarker');
+  const marcJose = document.querySelector('#joseMarker');
 
   const personajes = [
     {
-      id: 'bioJacobo',
-      marcador: 'jacoboMarker',
-      txFrontal1: '#jacobo1',
-      txFrontal2: '#jacobo2',
-      txFrontal3: '#jacobo3',
-      txFrontal4: '#jacobo4',
-      txFrontal5: '#jacobo5',
-      txFrontal6: '#jacobo6',
-      txFrontal7: '#jacobo7',
-      reverso: '#jacoboR',
+      id: 'bioHelia',
+      marcador: 'heliaMarker',
+      txFrontal5: '#helia5',
+      txFrontal6: '#helia6',
+      reverso: '#heliaR',
       scale: '1.25 1.25 1.25',
       pos: '0 0 0'
     },
     {
-      id: 'bioAntonio',
-      marcador: 'antonioMarker',
-      txFrontal1: '#antonio1',
-      txFrontal2: '#antonio2',
-      txFrontal3: '#antonio3',
-      txFrontal4: '#antonio4',
-      txFrontal5: '#antonio5',
-      txFrontal6: '#antonio6',
-      txFrontal7: '#antonio7',
-      reverso: '#antonioR',
+      id: 'bioIssac',
+      marcador: 'issacMarker',
+      txFrontal5: '#issac5',
+      txFrontal6: '#issac6',
+      reverso: '#issacR',
+      scale: '1.25 1.25 1.25',
+      pos: '0 0 0'
+    },
+    {
+      id: 'bioJose',
+      marcador: 'joseMarker',
+      txFrontal5: '#jose5',
+      txFrontal6: '#jose6',
+      reverso: '#joseR',
       scale: '1.25 1.25 1.25',
       pos: '0 0 0'
     }
+
   ];
 
   personajes.forEach(p => {
   const bio = new Biografia(
-    p.id, p.txFrontal1, p.txFrontal2, p.txFrontal3,
-    p.txFrontal4, p.txFrontal5, p.txFrontal6, p.txFrontal7,
-    p.reverso, p.scale, p.pos
+    p.id, p.txFrontal5, p.txFrontal6, p.reverso, p.scale, p.pos
   );
 
   const marcador = document.querySelector(`#${p.marcador}`);

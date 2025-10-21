@@ -31,27 +31,30 @@
         <img id="capa6" src="img/Mural/6.png" />
         <img id="capa7" src="img/Mural/7.png" />
 
-        <!--Biografías Jacobo Issac Ochentera-->
-        <img id="jacobo1" src="img/Biografias/JacoboIssacOchentero/1 fondo.png">
-        <img id="jacobo2" src="img/Biografias/JacoboIssacOchentero/2 calavera.png">
-        <img id="jacobo3" src="img/Biografias/JacoboIssacOchentero/3 flores.png">
-        <img id="jacobo4" src="img/Biografias/JacoboIssacOchentero/4 marco.png">
-        <img id="jacobo5" src="img/Biografias/JacoboIssacOchentero/5 personaje.png">
-        <img id="jacobo6" src="img/Biografias/JacoboIssacOchentero/6 textos.png">
-        <img id="jacobo7" src="img/Biografias/JacoboIssacOchentero/7 sempasuchil.png">
-        <img id="jacoboR" src="img/Biografias/JacoboIssacOchentero/Reverso.png">
+        <!--Fondos Biografias-->
+        <img id="fondo1" src="img/Biografias/Fondos/1 fondo.png" />
+        <img id="fondo2" src="img/Biografias/Fondos/2 calavera.png" />
+        <img id="fondo3" src="img/Biografias/Fondos/3 flores.png" />
+        <img id="fondo4" src="img/Biografias/Fondos/4 marco.png"  />
+        <img id="fondo7" src="img/Biografias/Fondos/7 sempasuchil.png" />
 
-        <!--Biografías Antonio Ramirez Laguna-->
-        <img id="antonio1" src="img/Biografias/JacoboIssacOchentero/1 fondo.png">
-        <img id="antonio2" src="img/Biografias/JacoboIssacOchentero/2 calavera.png">
-        <img id="antonio3" src="img/Biografias/JacoboIssacOchentero/3 flores.png">
-        <img id="antonio4" src="img/Biografias/JacoboIssacOchentero/4 marco.png">
-        <img id="antonio5" src="img/Biografias/JacoboIssacOchentero/5 personaje.png">
-        <img id="antonio6" src="img/Biografias/JacoboIssacOchentero/6 textos.png">
-        <img id="antonio7" src="img/Biografias/JacoboIssacOchentero/7 sempasuchil.png">
-        <img id="antonioR" src="img/Biografias/JacoboIssacOchentero/Reverso.png">
+        <!--Helia Bravo Hollis-->
+        <img id="helia5" src="img/Biografias/HeliaBravoHollis/5 personaje.png" />
+        <img id="helia6" src="img/Biografias/HeliaBravoHollis/6 textos.png" />
+        <img id="heliaR" src="img/Biografias/JacoboIssacOchentero/Reverso.png" />
+
+        <!--Jacobo Issac Ochoterena Mendieta-->
+        <img id="issac5" src="img/Biografias/JacoboIssacOchentero/5 personaje.png" />
+        <img id="issac6" src="img/Biografias/JacoboIssacOchentero/6 textos.png" />
+        <img id="issacR" src="img/Biografias/JacoboIssacOchentero/Reverso.png" />
+
+        <!--Jose de Lille-->
+        <img id="jose5" src="img/Biografias/JoseDeLille/5 personaje.png" />
+        <img id="jose6" src="img/Biografias/JoseDeLille/6 textos.png" />
+        <img id="joseR" src="img/Biografias/JacoboIssacOchentero/Reverso.png" />
       </a-assets>
 
+      <!--Marcador Mural-->
       <a-marker preset="hiro">
         <a-entity scale="3 3 3">
         <a-plane position="0 0 0" scale="1 1 1" rotation="-90 0 0" material="src: #capa7; transparent: true;"></a-plane>
@@ -63,17 +66,20 @@
         <a-entity gltf-model="#barco" position="0 .6 0" scale="1 1 1" rotation="-90 0 0" animation-mixer></a-entity>
         </a-entity>
       </a-marker>
+      
+      <!--Marcadores Biografías-->
+      <a-marker id="heliaMarker" type="pattern" url="img/Patrones/Patron_HeliaBravoHollis_Cactus.patt">
+      </a-marker> 
 
-      <a-marker id="jacoboMarker" type="pattern" url="img/Patrones/Patron_IssacOchoterenaMendieta_Celula.patt">
+      <a-marker id="issacMarker" type="pattern" url="img/Patrones/Patron_IssacOchoterenaMendieta_Celula.patt">
       </a-marker>
 
-      <a-marker id="antonioMarker" type="pattern" url="img/Patrones/Patron_LuisHerrera_Celulas.patt">
+      <a-marker id="joseMarker" type="pattern" url="img/Patrones/Patron_JosédeLilleBorja_Pastilla.patt">
       </a-marker>
 
       <a-entity camera>
         <a-cursor></a-cursor>
       </a-entity>
-
     </a-scene>
   </body>
 </html>

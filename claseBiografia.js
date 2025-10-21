@@ -1,13 +1,22 @@
+const texturas = {
+  text1: "#fondo1",
+  text2: "#fondo2",
+  text3: "#fondo3",
+  text4: "#fondo4",
+  text7: "#fondo7"
+};
+
 class Biografia {
-  constructor(id, txFrontal1, txFrontal2, txFrontal3, txFrontal4, txFrontal5, txFrontal6, txFrontal7, texturaTrasera, scale = '1 1 1', position = '0 0 0') {
+
+  constructor(id, txFrontal5, txFrontal6, texturaTrasera, scale = '1 1 1', position = '0 0 0') {
     this.id = id;
-    this.texturaFrontal1 = txFrontal1;
-    this.texturaFrontal2 = txFrontal2;
-    this.texturaFrontal3 = txFrontal3;
-    this.texturaFrontal4 = txFrontal4;
+    this.texturaFrontal1 = texturas.text1;
+    this.texturaFrontal2 = texturas.text2;
+    this.texturaFrontal3 = texturas.text3;
+    this.texturaFrontal4 = texturas.text4;
     this.texturaFrontal5 = txFrontal5;
     this.texturaFrontal6 = txFrontal6;
-    this.texturaFrontal7 = txFrontal7;
+    this.texturaFrontal7 = texturas.text7;
     this.texturaTrasera = texturaTrasera;
     this.scale = scale;
     this.position = position;
