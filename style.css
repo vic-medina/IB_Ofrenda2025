@@ -10,19 +10,7 @@ header {
     z-index: 10;
 }
 
-html, body {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  width: 100%;
-  overflow: hidden;
-  background-color: black;
-}
-
-a-scene {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
+body {
+    margin: 0; 
+    overflow: hidden;
 }
