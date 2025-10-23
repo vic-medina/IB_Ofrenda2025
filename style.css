@@ -10,11 +10,6 @@ header {
     z-index: 10;
 }
 
-body {
-    margin: 0; 
-    overflow: hidden;
-}
-
 html, body {
   margin: 0;
   padding: 0;
