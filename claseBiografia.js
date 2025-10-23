@@ -1,11 +1,11 @@
 const texturas = {
-  comunes: ['#fondo1', '#fondo2', '#fondo3', '#fondo4', '#fondo7']
+  comunes: ['#fondo1', '#fondo2', '#fondo5']
 };
 
 class Biografia {
-  constructor(id, txFrontal5, txFrontal6, texturaTrasera, scale = '1 1 1', position = '0 0 0') {
+  constructor(id, txFrontal3, txFrontal4, texturaTrasera, scale = '1 1 1', position = '0 0 0') {
     this.id = id;
-    this.texturasFrontales = [...texturas.comunes.slice(0, 4), txFrontal5, txFrontal6, texturas.comunes[4]];
+    this.texturasFrontales = [texturas.comunes[0], texturas.comunes[1], txFrontal3, txFrontal4, texturas.comunes[2]];
     this.texturaTrasera = texturaTrasera;
     this.scale = scale;
     this.position = position;
@@ -28,7 +28,7 @@ class Biografia {
     entidad.setAttribute('position', this.position);
     entidad.setAttribute('scale', this.scale);
 
-    // Planos frontales (1 al 7)
+    // Planos frontales (1 al 5)
     this.texturasFrontales.forEach((src, i) => {
       const yOffset = (i * 0.1).toFixed(2); // Espaciado vertical
       entidad.appendChild(this.crearPlano(src, yOffset));
