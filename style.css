@@ -26,23 +26,3 @@ a-scene {
   width: 100vw;
   height: 100vh;
 }
-
-@media screen and (orientation: landscape) {
-  body::before {
-    content: "Por favor gira tu dispositivo verticalmente";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    background: rgba(0,0,0,0.8);
-    padding: 20px;
-    font-size: 1.2em;
-    z-index: 9999;
-    text-align: center;
-  }
-
-  a-scene {
-    display: none;
-  }
-}
