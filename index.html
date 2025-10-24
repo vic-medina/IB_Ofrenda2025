@@ -6,18 +6,21 @@
     <title>AR Test</title>
 
     <!-- Librerías -->
+    <script src="https://aframe.io/releases/0.6.0/aframe.min.js"></script>
+    <script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
+
+    <!--
     <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
     <script src="https://cdn.rawgit.com/jeromeetienne/ar.js/1.7.2/aframe/build/aframe-ar.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/aframe-extras@6.1.1/dist/aframe-extras.min.js"></script>
+    -->
 
     <script src="claseBiografia.js"></script>
     <script src="script.js"></script>
 
-    <link rel="stylesheet" href="style.css">
   </head>
 
   <body>
-    <header>Instituto de Biología - Ofrenda 2025</header>
     <a-scene embedded arjs="sourceType: webcam; debugUIEnabled: false; trackingMethod: best; smooth: true;" vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: true">
 
       <a-assets>
@@ -94,7 +97,8 @@
 
       <!--Marcador Mural-->
       <a-marker id="muralMarker" type="pattern" url="img/Patrones/Patron_LonaEdificios.patt">
-        <a-entity scale="1 1 1" position="-10 10 0">
+        <a-box position="0 0 0" rotation="-90 0 0" scale="1 1 1" color="yellow" opacity="0.5"></a-box>
+        <a-entity scale="1 1 1" position="-10 6.5 0">
         <a-plane position="0 0 0" scale="1 1 1" rotation="-90 0 0" material="src: #capa7; transparent: true;"></a-plane>
         <a-plane position="0 .1 0" scale="1 1 1" rotation="-90 0 0" material="src: #capa6; transparent: true;"></a-plane>
         <a-plane position="0 .2 0" scale="1 1 1" rotation="-90 0 0" material="src: #capa5; transparent: true;"></a-plane>
