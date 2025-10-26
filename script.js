@@ -116,24 +116,26 @@ window.onload = function () {
 
   let isAnimating = false;
 
-  ['click', 'touchstart'].forEach(evento => {
-  entidad.addEventListener(evento, () => {
-    if (isAnimating) return;
-    isAnimating = true;
+  entidad.addEventListener('touchstart', (e) => {
+  if (isAnimating) return;
+  isAnimating = true;
 
-    const rotacionActual = entidad.getAttribute('rotation');
-    const nuevaRotacionZ = (rotacionActual.z + 180) % 360;
+  console.log(`¡Hola! Has tocado ${p.id}`);
 
-    entidad.removeAttribute('animation__rotar');
-    entidad.setAttribute('animation__rotar', {
-      property: 'rotation',
-      to: `0 0 ${nuevaRotacionZ}`,
-      dur: 500,
-      easing: 'easeInOutQuad'
-    });
+  const rotacionActual = entidad.getAttribute('rotation');
+  const nuevaRotacionZ = (rotacionActual.z + 180) % 360;
 
-    setTimeout(() => (isAnimating = false), 500);
+  entidad.removeAttribute('animation__rotar');
+  entidad.setAttribute('animation__rotar', {
+    property: 'rotation',
+    to: `0 0 ${nuevaRotacionZ}`,
+    dur: 500,
+    easing: 'easeInOutQuad'
   });
+
+  setTimeout(() => {
+    isAnimating = false;
+  }, 500);
 });
-  });
+});
 } 
