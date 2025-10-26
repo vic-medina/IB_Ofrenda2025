@@ -116,8 +116,7 @@ window.onload = function () {
 
   let isAnimating = false;
 
-  ['click', 'touchstart'].forEach(evento => {
-  entidad.addEventListener(evento, () => {
+  entidad.addEventListener('click', () => {
     if (!marcador.object3D.visible || isAnimating) return;
     isAnimating = true;
 
@@ -135,5 +134,4 @@ window.onload = function () {
     setTimeout(() => (isAnimating = false), 500);
   });
 });
-  });
 };
