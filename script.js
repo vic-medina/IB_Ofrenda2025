@@ -123,26 +123,29 @@ document.querySelectorAll('a-marker').forEach(marker => {
 });
 
 // Escucha el toque real del usuario
-['click', 'touchstart'].forEach(evt => {
-  document.body.addEventListener(evt, () => {
-    if (!marcadorVisible) return;
-    const entidad = marcadorVisible.firstElementChild;
-    if (!entidad || entidad.isAnimating) return;
 
-    entidad.isAnimating = true;
-    const rot = entidad.getAttribute('rotation');
-    const nuevaZ = (rot.z + 180) % 360;
+document.body.addEventListener('touchstart', () => {
+  if (!marcadorVisible) return; // si no hay marcador, no hace nada
 
-    entidad.removeAttribute('animation__rotar');
-    entidad.setAttribute('animation__rotar', {
-      property: 'rotation',
-      to: `0 0 ${nuevaZ}`,
-      dur: 500,
-      easing: 'easeInOutQuad'
-    });
+  // busca la entidad hija (tu biografía)
+  const entidad = marcadorVisible.firstElementChild;
+  if (!entidad) return;
 
-    setTimeout(() => (entidad.isAnimating = false), 500);
+  if (entidad.isAnimating) return;
+  entidad.isAnimating = true;
+
+  const rot = entidad.getAttribute('rotation');
+  const nuevaZ = (rot.z + 180) % 360;
+
+  entidad.removeAttribute('animation__rotar');
+  entidad.setAttribute('animation__rotar', {
+    property: 'rotation',
+    to: `0 0 ${nuevaZ}`,
+    dur: 500,
+    easing: 'easeInOutQuad'
   });
+
+  setTimeout(() => entidad.isAnimating = false, 500);
 });
 });
 }
