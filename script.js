@@ -116,26 +116,30 @@ window.onload = function () {
 
   let isAnimating = false;
 
-  entidad.addEventListener('touchstart', (e) => {
-  if (isAnimating) return;
-  isAnimating = true;
+  entidad.addEventListener('click', () => {
+    if (isAnimating) return; // Ignora si ya está animando
+    isAnimating = true;
 
-  console.log(`¡Hola! Has tocado ${p.id}`);
+    console.log(`¡Hola! Has hecho clic en ${p.id}`);
 
-  const rotacionActual = entidad.getAttribute('rotation');
-  const nuevaRotacionZ = (rotacionActual.z + 180) % 360;
+    const rotacionActual = entidad.getAttribute('rotation');
+    const nuevaRotacionZ = (rotacionActual.z + 180) % 360;
 
-  entidad.removeAttribute('animation__rotar');
-  entidad.setAttribute('animation__rotar', {
-    property: 'rotation',
-    to: `0 0 ${nuevaRotacionZ}`,
-    dur: 500,
-    easing: 'easeInOutQuad'
+    // Eliminar animaciones anteriores si existen
+    entidad.removeAttribute('animation__rotar');
+
+    // Agregar nueva animación
+    entidad.setAttribute('animation__rotar', {
+      property: 'rotation',
+      to: `0 0 ${nuevaRotacionZ}`,
+      dur: 500,
+      easing: 'easeInOutQuad'
+    });
+
+    // Liberar la bandera después de la duración
+    setTimeout(() => {
+      isAnimating = false;
+    }, 500);
   });
-
-  setTimeout(() => {
-    isAnimating = false;
-  }, 500);
-});
-});
-} 
+  });
+};
