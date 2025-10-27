@@ -10,6 +10,15 @@ window.onload = function () {
       pos: '0 0 0'
     },
     {
+      id: 'bioAntonio',
+      marcador: 'antonioMarker',
+      txFrontal3: '#antonio3',
+      txFrontal4: '#antonio4',
+      reverso: '#antonioR',
+      scale: '1.25 1.25 1.25',
+      pos: '0 0 0'
+    },
+    {
       id: 'bioCarlos',
       marcador: 'carlosMarker',
       txFrontal3: '#carlos3',
