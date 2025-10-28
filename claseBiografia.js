@@ -3,7 +3,7 @@ const texturas = {
 };
 
 class Biografia {
-  constructor(id, txFrontal3, txFrontal4, texturaTrasera, scale = '2 2 2', position = '0 2.5 0') {
+  constructor(id, txFrontal3, txFrontal4, texturaTrasera, scale = '2.1 2.1 2.1', position = '0 2.5 0') {
     this.id = id;
     this.texturasFrontales = [texturas.comunes[0], texturas.comunes[1], txFrontal3, txFrontal4, texturas.comunes[2]];
     this.texturaTrasera = texturaTrasera;
@@ -16,7 +16,7 @@ class Biografia {
     plano.setAttribute('material', `src: ${src}; side: double; transparent: true;`);
     plano.setAttribute('position', `0 ${yOffset} 0`);
     plano.setAttribute('scale', this.scale);
-    plano.setAttribute('rotation', '-80 0 0');
+    plano.setAttribute('rotation', '-100 0 0');
     plano.setAttribute('width', '1.5');
     plano.setAttribute('height', '2');
     return plano;
