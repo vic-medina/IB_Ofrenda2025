@@ -103,10 +103,11 @@ window.onload = function () {
 
 // Escucha cuando cada marcador aparece o desaparece
 document.querySelectorAll('a-marker').forEach(marker => {
-  marker.addEventListener('markerFound', () => marcadorVisible = marker);
-  marker.addEventListener('markerLost', () => marcadorVisible = null);
+  if (marker.id !== 'muralMarker') {
+    marker.addEventListener('markerFound', () => marcadorVisible = marker);
+    marker.addEventListener('markerLost', () => marcadorVisible = null);
+  }
 });
-
 // Escucha el toque real del usuario
 
 document.body.addEventListener('touchstart', () => {
