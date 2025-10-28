@@ -8,7 +8,7 @@ class Biografia {
     this.texturasFrontales = [texturas.comunes[0], texturas.comunes[1], txFrontal3, txFrontal4, texturas.comunes[2]];
     this.texturaTrasera = texturaTrasera;
     this.scale = scale;
-    this.position = '0 0 0';
+    this.position = '0 5 0';
   }
 
   crearPlano(src, yOffset) {
