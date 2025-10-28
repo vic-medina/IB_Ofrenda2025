@@ -7,7 +7,6 @@ window.onload = function () {
       txFrontal4: '#alfonso4',
       reverso: '#alfonsoR',
       scale: '1.25 1.25 1.25',
-      pos: '0 5 0'
     },
     {
       id: 'bioAntonio',
@@ -16,7 +15,6 @@ window.onload = function () {
       txFrontal4: '#antonio4',
       reverso: '#antonioR',
       scale: '1.25 1.25 1.25',
-      pos: '0 5 0'
     },
     {
       id: 'bioCarlos',
@@ -25,7 +23,6 @@ window.onload = function () {
       txFrontal4: '#carlos4',
       reverso: '#carlosR',
       scale: '1.2 1.2 1.2',
-      pos: '0 5 0'
     },
     {
       id: 'bioCuesta',
@@ -34,7 +31,6 @@ window.onload = function () {
       txFrontal4: '#cuesta4',
       reverso: '#cuestaR',
       scale: '1.2 1.2 1.2',
-      pos: '0 5 0'
     },
     {
       id: 'bioClemente',
@@ -43,7 +39,6 @@ window.onload = function () {
       txFrontal4: '#clemente4',
       reverso: '#clementeR',
       scale: '1.2 1.2 1.2',
-      pos: '0 5 0'
     },
     {
       id: 'bioEduardo',
@@ -52,7 +47,6 @@ window.onload = function () {
       txFrontal4: '#eduardo4',
       reverso: '#eduardoR',
       scale: '1.2 1.2 1.2',
-      pos: '0 5 0'
     },
     {
       id: 'bioFederico',
@@ -61,7 +55,6 @@ window.onload = function () {
       txFrontal4: '#federico4',
       reverso: '#federicoR',
       scale: '1.2 1.2 1.2',
-      pos: '0 5 0'
     },
     {
       id: 'bioHelia',
@@ -70,7 +63,6 @@ window.onload = function () {
       txFrontal4: '#helia4',
       reverso: '#heliaR',
       scale: '1.2 1.2 1.2',
-      pos: '0 5 0'
     },
     {
       id: 'bioJacobo',
@@ -79,7 +71,6 @@ window.onload = function () {
       txFrontal4: '#jacobo4',
       reverso: '#jacoboR',
       scale: '1.2 1.2 1.2',
-      pos: '0 5 0'
     },
     {
       id: 'bioJose',
@@ -88,7 +79,6 @@ window.onload = function () {
       txFrontal4: '#jose4',
       reverso: '#joseR',
       scale: '1.2 1.2 1.2',
-      pos: '0 5 0'
     },
     {
       id: 'bioGomez',
@@ -97,7 +87,6 @@ window.onload = function () {
       txFrontal4: '#gomez4',
       reverso: '#gomezR',
       scale: '1.2 1.2 1.2',
-      pos: '0 5 0'
     },
     {
       id: 'bioLeopoldo',
@@ -106,13 +95,12 @@ window.onload = function () {
       txFrontal4: '#leopoldo4',
       reverso: '#leopoldoR',
       scale: '1.2 1.2 1.2',
-      pos: '0 5 0'
     }
   ];
 
   personajes.forEach(p => {
   const bio = new Biografia(
-    p.id, p.txFrontal3, p.txFrontal4, p.reverso, p.scale, p.pos
+    p.id, p.txFrontal3, p.txFrontal4, p.reverso, p.scale
   );
   const marcador = document.querySelector(`#${p.marcador}`);
     if (!marcador) {
