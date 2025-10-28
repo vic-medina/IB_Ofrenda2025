@@ -3,7 +3,7 @@ const texturas = {
 };
 
 class Biografia {
-  constructor(id, txFrontal3, txFrontal4, texturaTrasera, scale = '2 2 2', position = '0 4 0') {
+  constructor(id, txFrontal3, txFrontal4, texturaTrasera, scale = '2.2 2.2 2.2', position = '0 3 0') {
     this.id = id;
     this.texturasFrontales = [texturas.comunes[0], texturas.comunes[1], txFrontal3, txFrontal4, texturas.comunes[2]];
     this.texturaTrasera = texturaTrasera;
