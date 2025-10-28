@@ -6,7 +6,6 @@ window.onload = function () {
       txFrontal3: '#alfonso3',
       txFrontal4: '#alfonso4',
       reverso: '#alfonsoR',
-      scale: '1.25 1.25 1.25',
     },
     {
       id: 'bioAntonio',
@@ -14,7 +13,6 @@ window.onload = function () {
       txFrontal3: '#antonio3',
       txFrontal4: '#antonio4',
       reverso: '#antonioR',
-      scale: '1.25 1.25 1.25',
     },
     {
       id: 'bioCarlos',
@@ -22,7 +20,6 @@ window.onload = function () {
       txFrontal3: '#carlos3',
       txFrontal4: '#carlos4',
       reverso: '#carlosR',
-      scale: '1.2 1.2 1.2',
     },
     {
       id: 'bioCuesta',
@@ -30,7 +27,6 @@ window.onload = function () {
       txFrontal3: '#cuesta3',
       txFrontal4: '#cuesta4',
       reverso: '#cuestaR',
-      scale: '1.2 1.2 1.2',
     },
     {
       id: 'bioClemente',
@@ -38,7 +34,6 @@ window.onload = function () {
       txFrontal3: '#clemente3',
       txFrontal4: '#clemente4',
       reverso: '#clementeR',
-      scale: '1.2 1.2 1.2',
     },
     {
       id: 'bioEduardo',
@@ -46,7 +41,6 @@ window.onload = function () {
       txFrontal3: '#eduardo3',
       txFrontal4: '#eduardo4',
       reverso: '#eduardoR',
-      scale: '1.2 1.2 1.2',
     },
     {
       id: 'bioFederico',
@@ -54,7 +48,6 @@ window.onload = function () {
       txFrontal3: '#federico3',
       txFrontal4: '#federico4',
       reverso: '#federicoR',
-      scale: '1.2 1.2 1.2',
     },
     {
       id: 'bioHelia',
@@ -62,7 +55,6 @@ window.onload = function () {
       txFrontal3: '#helia3',
       txFrontal4: '#helia4',
       reverso: '#heliaR',
-      scale: '1.2 1.2 1.2',
     },
     {
       id: 'bioJacobo',
@@ -70,7 +62,6 @@ window.onload = function () {
       txFrontal3: '#jacobo3',
       txFrontal4: '#jacobo4',
       reverso: '#jacoboR',
-      scale: '1.2 1.2 1.2',
     },
     {
       id: 'bioJose',
@@ -78,7 +69,6 @@ window.onload = function () {
       txFrontal3: '#jose3',
       txFrontal4: '#jose4',
       reverso: '#joseR',
-      scale: '1.2 1.2 1.2',
     },
     {
       id: 'bioGomez',
@@ -86,7 +76,6 @@ window.onload = function () {
       txFrontal3: '#gomez3',
       txFrontal4: '#gomez4',
       reverso: '#gomezR',
-      scale: '1.2 1.2 1.2',
     },
     {
       id: 'bioLeopoldo',
@@ -94,7 +83,6 @@ window.onload = function () {
       txFrontal3: '#leopoldo3',
       txFrontal4: '#leopoldo4',
       reverso: '#leopoldoR',
-      scale: '1.2 1.2 1.2',
     }
   ];
 
