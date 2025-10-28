@@ -16,7 +16,7 @@ class Biografia {
     plano.setAttribute('material', `src: ${src}; side: double; transparent: true;`);
     plano.setAttribute('position', `0 ${yOffset} 0`);
     plano.setAttribute('scale', this.scale);
-    plano.setAttribute('rotation', '-70 0 0');
+    plano.setAttribute('rotation', '-80 0 0');
     plano.setAttribute('width', '1.5');
     plano.setAttribute('height', '2');
     return plano;
